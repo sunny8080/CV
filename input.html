@@ -11,15 +11,15 @@
     <input type="text" id="message" name="" value="" placeholder="Enter your message">
     <br>
 
-    <label for="sub form">Submit form</label>
-    <input type="submit" id="sub form" name="" value="Click Me" >
+    <label for="sub-form">Submit form</label>
+    <input type="submit" id="sub-form" name="" value="Click Me" >
     <br>
 
     <label for="coding">Coding</label>
     <input type="checkbox" id="coding" name="interest" value="coding" checked>
     <br>
 
-    <label for="color">Choose Body Color : </label>
+    <label for="color">Choose Page Color : </label>
     <input type="color" id="color" value="#ff0000">
     <br>
 
@@ -34,6 +34,7 @@
     <label for="email">Email</label>
     <input type="email" id="email" name="" value="" placeholder="zomato987@gmail.com" size="20" minlength="5">
     <br>
+    <br>
 
     <form>
       <div class="emailBox">
@@ -44,7 +45,7 @@
                 list="defaultEmails" >
 
          <datalist id="defaultEmails">
-             <option value="sk7522422@besthome.com">
+             <option value="sunny.kumar.work0001@besthome.com">
              <option value="sunnykumar11234@besthome.com">
              <option value="pawanrmate7739@besthome.com">
              <option value="ashish.kumar1234@besthome.com">
@@ -64,7 +65,7 @@
     <form method="post">
       <div class="">
         <label for="profile_pic">Choose a profile picture</label>
-        <input type="file" id="profile_pic" name="profile_pic"multiple accept="image/jpeg, .jpg, .png">
+        <input type="file" id="profile_pic" name="profile_pic" multiple accept="image/jpeg, .jpg, .png">
       </div>
       <div >
         <button>Submit</button>
@@ -79,7 +80,7 @@
 
 
     <label for="login">Image</label>
-    <input type="image" src="login-button.png" width="60" height="15" alt="login">
+    <input type="image" src="image/login-button.png" width="60" height="15" alt="login">
     <br>
 
 
@@ -92,7 +93,7 @@
     <br>
 
 
-    <form class="" action="index.html" method="post">
+    <form class="" action="" method="post">
       <div class="">
         <label for="userPassword">Password(8-16 char)</label>
         <input type="password" id="userPassword" placeholder="Enter your password"
@@ -123,12 +124,14 @@
         <button type="submit">Submit</button>
       </div>
     </form>
+    <br>
 
     <p>Audio settings:</p>
     <div>
-      <input type="range" id="volume" name="volume" value="70" min="10" max="100" step="5" list="tickMarks">
+      <input type="range" id="volume" name="volume" value="70" min="10" max="100" step="5" list="markLebels">
       <label for="volume">Volume</label>
-      <datalist id="tickMarks">
+
+      <datalist id="markLebels">
         <option value="10"></option>
         <option value="20"></option>
         <option value="30"></option>
@@ -148,7 +151,6 @@
     <br>
 
 
-
   <form>
     <div>
       <label for="id">Type your message</label>
@@ -161,44 +163,92 @@
   </form>
   <br>
 
+  <form role="search">
+    <div>
+      <input type="search" name="q" id="mySearch" placeholder="Search your name"
+        aria-label="Search your name through marksheet" size="30" required>
+        <button>Search</button>
+    </div>
+  </form>
+  <br>
 
-  
+  <form>
+    <div>
+      <label for="telNo">Phone No. :</label>
+      <input type="tel" id="telNo" name="telNo" placeholder="XXX-XXX-XXXX"
+        size="15" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      <button type="submit">Submit</button> <br>
+      <small>Format:xxx-xxx-xxxx</small>
+    </div>
+  </form>
+  <br>
+
+  <label for="apptTime">Choose your appointment time:</label>
+  <input type="time" id="apptTime" value="" name="apptTime" min="09:00" max="18:00" step="2" required>
+  <small>Office hours are 9 AM to 6pm</small>
+  <button type="button" id="apptTime" name="button">Submit</button>
+  <br>
+
+  <form>
+    <div>
+      <label for="myURL">Enter your website :</label>
+      <input type="url" id="myURL" name="myURL" placeholder="https://example.com" value="" pattern="https://.*" list="defaultURLs" size="25">
+      <button>Submit</button>
+
+      <datalist id="defaultURLs">
+        <option value="https://sunnykumar0001.github.io/CV/" label="Sunny Personal Site">
+        <option value="https://www.google.com/" label="Google">
+        <option value="https://www.microsoft.com/" label="Microdoft">
+        <option value="https://developer.mozilla.org/" label="MDN Web Docs">
+      </datalist>
+    </div>
+  </form>
+  <br>
+
+  <label for="vacationWeek">Choose your vacation week :</label>
+  <input type="week" id="vacationWeek" name="vacationWeek" value="2018-W12" min="2017-W12" max="2018-W45" step="2">
+  <button>Submit</button>
+  <br>
+  <br>
+  <hr size="2" noshade>
 
 
 
 
 
+  <br>
+  <br>
+
+  <figure>
+    <img src="image/cute-puppies.jpg" alt="A cute puppy" width="200">
+    <figcaption>A cute puppy</figcaption>
+  </figure>
+  <br>
+
+  <figure>
+    <blockquote cite="https://dzone.com/articles/best-programming-jokes-amp-quotes">
+      <p>Any fool can write code that a computer can understand.
+        Good programmers write code that humans can understand.</p>
+    </blockquote>
+    <figcaption>--Martin Fowler</figcaption>
+  </figure>
+  <br>
+
+  <figure>
+    <q cite="https://dzone.com/articles/best-programming-jokes-amp-quotes">In order to be irreplaceable, one must always be different</q>
+    <figcaption>– Coco Chanel</figcaption>
+  </figure>
+
+  <p>When Dave asks to HAL, what's the problem ?, HAL replied:
+    <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I think you know what the problem is just as well as I do.</q>
+  </p>
 
 
+  <p><cite>HTML course</cite> by Sunny Baranwal</p>
 
+  <p>The <abbr title="World Wide Web">WWW</abbr> takes more time to pronounce than its full form.</p>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <br>
 
 
   </body>
